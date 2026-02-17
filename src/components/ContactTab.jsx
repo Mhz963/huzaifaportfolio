@@ -168,7 +168,7 @@ const ContactTab = () => {
               <FaGithub />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/huzaifa-awan-wordpressdeveloper/"
+              href="https://www.linkedin.com/in/huzaifa-awan-wordpress-developer/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
