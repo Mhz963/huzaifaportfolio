@@ -1,115 +1,114 @@
 import { motion } from "framer-motion";
 import {
   FaReact,
-  FaNodeJs,
   FaWordpress,
   FaHtml5,
   FaCss3Alt,
   FaPhp,
   FaGitAlt,
-  FaDocker,
-  FaFigma,
-  FaDatabase,
   FaLaptopCode,
   FaServer,
   FaPaintBrush,
   FaRocket,
   FaMobileAlt,
   FaShieldAlt,
+  FaSearchPlus,
+  FaGraduationCap,
 } from "react-icons/fa";
 import {
   SiJavascript,
-  SiTypescript,
-  SiNextdotjs,
   SiTailwindcss,
-  SiMongodb,
   SiMysql,
-  SiRedux,
-  SiExpress,
-  SiGraphql,
-  SiFirebase,
+  SiWoocommerce,
+  SiElementor,
+  SiBootstrap,
 } from "react-icons/si";
 
 const skills = [
-  { name: "React", icon: <FaReact />, level: 95, category: "frontend" },
-  { name: "JavaScript", icon: <SiJavascript />, level: 95, category: "frontend" },
-  { name: "TypeScript", icon: <SiTypescript />, level: 88, category: "frontend" },
-  { name: "Next.js", icon: <SiNextdotjs />, level: 85, category: "frontend" },
-  { name: "HTML5", icon: <FaHtml5 />, level: 98, category: "frontend" },
-  { name: "CSS3", icon: <FaCss3Alt />, level: 95, category: "frontend" },
-  { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 90, category: "frontend" },
-  { name: "Redux", icon: <SiRedux />, level: 85, category: "frontend" },
-  { name: "Node.js", icon: <FaNodeJs />, level: 90, category: "backend" },
-  { name: "Express.js", icon: <SiExpress />, level: 88, category: "backend" },
-  { name: "WordPress", icon: <FaWordpress />, level: 92, category: "backend" },
-  { name: "PHP", icon: <FaPhp />, level: 85, category: "backend" },
-  { name: "MongoDB", icon: <SiMongodb />, level: 82, category: "backend" },
-  { name: "MySQL", icon: <SiMysql />, level: 85, category: "backend" },
-  { name: "GraphQL", icon: <SiGraphql />, level: 78, category: "backend" },
-  { name: "Firebase", icon: <SiFirebase />, level: 80, category: "backend" },
-  { name: "Git", icon: <FaGitAlt />, level: 90, category: "tools" },
-  { name: "Docker", icon: <FaDocker />, level: 75, category: "tools" },
-  { name: "Figma", icon: <FaFigma />, level: 80, category: "tools" },
-  { name: "Databases", icon: <FaDatabase />, level: 85, category: "tools" },
+  { name: "WordPress", icon: <FaWordpress />, level: 95 },
+  { name: "Elementor", icon: <SiElementor />, level: 95 },
+  { name: "WooCommerce", icon: <SiWoocommerce />, level: 90 },
+  { name: "Plugin Customization", icon: <FaServer />, level: 92 },
+  { name: "Theme Development", icon: <FaPaintBrush />, level: 90 },
+  { name: "PHP", icon: <FaPhp />, level: 85 },
+  { name: "HTML5", icon: <FaHtml5 />, level: 98 },
+  { name: "CSS3", icon: <FaCss3Alt />, level: 95 },
+  { name: "JavaScript", icon: <SiJavascript />, level: 88 },
+  { name: "Bootstrap", icon: <SiBootstrap />, level: 92 },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 88 },
+  { name: "React", icon: <FaReact />, level: 82 },
+  { name: "MySQL", icon: <SiMysql />, level: 85 },
+  { name: "Speed Optimization", icon: <FaRocket />, level: 93 },
+  { name: "SEO", icon: <FaSearchPlus />, level: 90 },
+  { name: "Git", icon: <FaGitAlt />, level: 85 },
 ];
 
 const services = [
   {
-    icon: <FaLaptopCode />,
-    title: "Frontend Development",
-    description: "Pixel-perfect, responsive UIs built with React, Next.js, and modern CSS frameworks. Smooth animations and blazing-fast performance.",
-  },
-  {
-    icon: <FaServer />,
-    title: "Backend Development",
-    description: "Scalable APIs and server-side solutions using Node.js, Express, and databases like MongoDB and MySQL.",
-  },
-  {
     icon: <FaWordpress />,
-    title: "WordPress Solutions",
-    description: "Custom themes, plugins, and full WordPress development. E-commerce with WooCommerce and advanced CMS setups.",
+    title: "WordPress Development",
+    description: "Custom WordPress websites built from scratch with tailored themes, advanced functionality, and seamless content management systems.",
   },
   {
-    icon: <FaPaintBrush />,
-    title: "UI/UX Design",
-    description: "User-centered design with Figma. Wireframes, prototypes, and design systems that look stunning and convert.",
+    icon: <SiElementor />,
+    title: "Elementor Page Building",
+    description: "Stunning, pixel-perfect page designs using Elementor Pro. Custom widgets, dynamic content, and visually engaging layouts.",
+  },
+  {
+    icon: <SiWoocommerce />,
+    title: "WooCommerce Solutions",
+    description: "Complete e-commerce store setup and optimization with WooCommerce — product management, payment gateways, and conversion-focused design.",
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: "Theme & Plugin Customization",
+    description: "Deep customization of WordPress themes and plugins to match exact requirements. Custom PHP development and third-party integrations.",
   },
   {
     icon: <FaMobileAlt />,
-    title: "Responsive Design",
-    description: "Seamless experiences across all devices. Mobile-first approach ensuring your app looks great everywhere.",
+    title: "Responsive Web Design",
+    description: "Mobile-first, fully responsive websites using Bootstrap and Tailwind CSS that look flawless across all devices and screen sizes.",
   },
   {
     icon: <FaShieldAlt />,
-    title: "Performance & SEO",
-    description: "Speed optimization, Core Web Vitals, and SEO best practices to maximize your web presence and rankings.",
+    title: "Speed & SEO Optimization",
+    description: "Website performance tuning, Core Web Vitals optimization, caching strategies, and advanced SEO practices to boost rankings and user experience.",
   },
 ];
 
 const experience = [
   {
-    role: "Senior Full-Stack Developer",
-    company: "Freelance / Contract",
-    period: "2021 – Present",
+    role: "Sr. WordPress Developer",
+    company: "Zee Tech PVT Ltd",
+    period: "2025 – Present",
     description:
-      "Leading full-stack projects for diverse clients. Architecting scalable React and Node.js applications, delivering custom WordPress themes and plugins, and mentoring junior developers.",
-    tags: ["React", "Node.js", "WordPress", "MongoDB"],
+      "Currently delivering high-quality WordPress solutions and contributing to numerous React projects with a 100% client-satisfaction record. Building scalable, performant websites for diverse clients.",
+    tags: ["WordPress", "React", "Elementor", "WooCommerce"],
   },
   {
-    role: "Frontend Developer",
-    company: "Tech Agency",
-    period: "2019 – 2021",
+    role: "Sr. WordPress Developer",
+    company: "Webseowiz-Tech, Lahore",
+    period: "May 2024 – Dec 2024",
     description:
-      "Built responsive, high-performance web applications using React, Redux, and modern CSS. Collaborated with design teams to deliver pixel-perfect UI implementations.",
-    tags: ["React", "Redux", "Tailwind", "TypeScript"],
+      "Created professional, high-performance websites tailored to client needs. Handled theme and plugin customization, site-speed optimization, and applied advanced SEO practices to improve visibility and user experience.",
+    tags: ["WordPress", "SEO", "Speed Optimization", "PHP"],
   },
   {
-    role: "WordPress Developer",
-    company: "Digital Studio",
-    period: "2018 – 2019",
+    role: "WordPress Developer & Project Manager",
+    company: "TechoSolution",
+    period: "2022 – 2024",
     description:
-      "Developed custom WordPress themes and plugins. Optimized site performance and implemented SEO best practices for clients across multiple industries.",
-    tags: ["WordPress", "PHP", "MySQL", "SEO"],
+      "Successfully delivered numerous projects with a 100% client-satisfaction record. Additionally served as Project Manager, overseeing project lifecycles, coordinating teams, and ensuring on-time, high-quality outcomes.",
+    tags: ["WordPress", "Project Management", "Elementor", "Bootstrap"],
+  },
+];
+
+const education = [
+  {
+    degree: "BS Software Engineering",
+    institution: "Virtual University, Lahore",
+    period: "2024 – 2028",
+    description: "Currently pursuing a degree in Software Engineering, strengthening core foundations in programming, data structures, algorithms, and modern software development practices.",
   },
 ];
 
@@ -150,13 +149,14 @@ const AboutTab = () => {
           About <span className="gradient-text gradient-text-animated">Me</span>
         </h2>
         <p className="about-text">
-          I'm a passionate full-stack developer with over 5 years of hands-on
-          experience building modern web applications. From crafting intuitive
-          user interfaces with React to designing robust backend systems with
-          Node.js, I bring ideas to life with clean, maintainable code. My
-          WordPress expertise allows me to deliver powerful CMS solutions
-          tailored to client needs. I believe in writing code that is not only
-          functional but also elegant and scalable.
+          I am Huzaifa Awan, an experienced WordPress developer with over five
+          years of expertise in creating and optimizing high-performing websites.
+          I specialize in Elementor page building, WooCommerce development, and
+          website speed optimization. Additionally, I am highly skilled in
+          Bootstrap, Tailwind CSS, and plugin &amp; theme customization to deliver
+          tailored, responsive, and SEO-friendly solutions. I'm passionate about
+          clean code, pixel-perfect design, and delivering results that exceed
+          client expectations.
         </p>
       </motion.div>
 
@@ -222,7 +222,7 @@ const AboutTab = () => {
 
       {/* Experience Timeline */}
       <div className="experience-section">
-        <h3 className="subsection-title">Experience</h3>
+        <h3 className="subsection-title">Work Experience</h3>
         <div className="timeline">
           {experience.map((exp, index) => (
             <motion.div
@@ -245,6 +245,35 @@ const AboutTab = () => {
                     <span key={tag} className="timeline-tag">{tag}</span>
                   ))}
                 </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Education Section */}
+      <div className="experience-section">
+        <h3 className="subsection-title">Education</h3>
+        <div className="timeline">
+          {education.map((edu, index) => (
+            <motion.div
+              key={index}
+              className="timeline-item"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+            >
+              <div className="timeline-dot">
+                <span className="timeline-dot-ring" />
+              </div>
+              <div className="timeline-content">
+                <span className="timeline-period">{edu.period}</span>
+                <h4 className="timeline-role">
+                  <FaGraduationCap style={{ marginRight: "0.5rem", verticalAlign: "middle" }} />
+                  {edu.degree}
+                </h4>
+                <span className="timeline-company">{edu.institution}</span>
+                <p className="timeline-desc">{edu.description}</p>
               </div>
             </motion.div>
           ))}

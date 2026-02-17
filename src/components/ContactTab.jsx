@@ -6,7 +6,6 @@ import {
   FaPhone,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaPaperPlane,
   FaWhatsapp,
   FaCheckCircle,
@@ -68,8 +67,8 @@ const ContactTab = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
-        Have a project in mind or want to collaborate? I'd love to hear from
-        you. Let's build something amazing together.
+        Have a project in mind or need a WordPress website? I'd love to hear
+        from you. Let's build something amazing together.
       </motion.p>
 
       {/* Quick response cards */}
@@ -89,7 +88,7 @@ const ContactTab = () => {
         </div>
         <div className="response-card">
           <FaCheckCircle className="response-icon" />
-          <span>100% confidential</span>
+          <span>100% client satisfaction</span>
         </div>
       </motion.div>
 
@@ -111,7 +110,7 @@ const ContactTab = () => {
             </div>
             <div>
               <h4>Email</h4>
-              <p>huzaifa.awan@email.com</p>
+              <p>huzaifaawan9461@gmail.com</p>
             </div>
           </motion.div>
 
@@ -125,7 +124,7 @@ const ContactTab = () => {
             </div>
             <div>
               <h4>Phone</h4>
-              <p>+92 300 1234567</p>
+              <p>+92 309 6065655</p>
             </div>
           </motion.div>
 
@@ -139,7 +138,7 @@ const ContactTab = () => {
             </div>
             <div>
               <h4>WhatsApp</h4>
-              <p>+92 300 1234567</p>
+              <p>+92 309 6065655</p>
             </div>
           </motion.div>
 
@@ -159,7 +158,7 @@ const ContactTab = () => {
 
           <div className="social-links">
             <motion.a
-              href="https://github.com/"
+              href="https://github.com/Mhz963"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -169,7 +168,7 @@ const ContactTab = () => {
               <FaGithub />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/huzaifa-awan-wordpressdeveloper/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -179,21 +178,11 @@ const ContactTab = () => {
               <FaLinkedin />
             </motion.a>
             <motion.a
-              href="https://twitter.com/"
+              href="https://wa.me/923096065655"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
               whileHover={{ y: -6, scale: 1.15, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaTwitter />
-            </motion.a>
-            <motion.a
-              href="https://wa.me/923001234567"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-              whileHover={{ y: -6, scale: 1.15, rotate: -5 }}
               whileTap={{ scale: 0.95 }}
             >
               <FaWhatsapp />
@@ -220,7 +209,7 @@ const ContactTab = () => {
                 onChange={handleChange}
                 onFocus={() => setFocusedField("name")}
                 onBlur={() => setFocusedField(null)}
-                placeholder="John Doe"
+                placeholder="Your full name"
                 required
               />
             </div>
@@ -234,7 +223,7 @@ const ContactTab = () => {
                 onChange={handleChange}
                 onFocus={() => setFocusedField("email")}
                 onBlur={() => setFocusedField(null)}
-                placeholder="john@example.com"
+                placeholder="your@email.com"
                 required
               />
             </div>
@@ -250,7 +239,7 @@ const ContactTab = () => {
               onChange={handleChange}
               onFocus={() => setFocusedField("subject")}
               onBlur={() => setFocusedField(null)}
-              placeholder="Project Inquiry"
+              placeholder="WordPress Project Inquiry"
               required
             />
           </div>

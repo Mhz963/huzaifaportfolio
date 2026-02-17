@@ -1,20 +1,26 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaWordpress, FaCode, FaDownload, FaArrowRight } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaWordpress, FaCode, FaArrowRight } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiWoocommerce,
+  SiElementor,
+  SiBootstrap,
+} from "react-icons/si";
 import TypeWriter from "./TypeWriter";
 import AnimatedCounter from "./AnimatedCounter";
 
 const techStack = [
-  { icon: <FaReact />, name: "React", color: "#61dafb" },
-  { icon: <FaNodeJs />, name: "Node.js", color: "#339933" },
   { icon: <FaWordpress />, name: "WordPress", color: "#21759b" },
+  { icon: <SiElementor />, name: "Elementor", color: "#92003B" },
+  { icon: <SiWoocommerce />, name: "WooCommerce", color: "#96588a" },
+  { icon: <FaReact />, name: "React", color: "#61dafb" },
+  { icon: <SiBootstrap />, name: "Bootstrap", color: "#7952b3" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#06b6d4" },
   { icon: <SiJavascript />, name: "JavaScript", color: "#f7df1e" },
-  { icon: <SiTypescript />, name: "TypeScript", color: "#3178c6" },
-  { icon: <SiNextdotjs />, name: "Next.js", color: "#000000" },
-  { icon: <SiTailwindcss />, name: "Tailwind", color: "#06b6d4" },
 ];
 
-const HomeTab = () => {
+const HomeTab = ({ onNavigate }) => {
   return (
     <motion.section
       className="tab-content home-tab"
@@ -37,7 +43,7 @@ const HomeTab = () => {
         >
           <span className="badge-pulse" />
           <FaCode className="badge-icon" />
-          <span>Available for Freelance Work</span>
+          <span>Senior WordPress Developer</span>
         </motion.div>
 
         <motion.h1
@@ -59,12 +65,13 @@ const HomeTab = () => {
           <span className="typewriter-prefix">I build </span>
           <TypeWriter
             words={[
-              "modern web applications",
-              "scalable React frontends",
-              "robust Node.js backends",
-              "custom WordPress solutions",
-              "pixel-perfect user interfaces",
-              "high-performance APIs",
+              "high-performance WordPress websites",
+              "custom Elementor page designs",
+              "WooCommerce e-commerce stores",
+              "responsive & SEO-friendly solutions",
+              "custom themes & plugins",
+              "speed-optimized web experiences",
+              "React-powered web applications",
             ]}
             speed={80}
             deleteSpeed={40}
@@ -78,10 +85,11 @@ const HomeTab = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          Senior Full-Stack Developer with <strong>5+ years</strong> of
-          experience crafting modern web applications. Specialized in React,
-          Node.js, and WordPress — turning ideas into pixel-perfect, performant
-          digital experiences.
+          Experienced WordPress Developer with <strong>5+ years</strong> of
+          expertise in creating and optimizing high-performing websites.
+          Specialized in Elementor, WooCommerce, speed optimization, Bootstrap,
+          Tailwind, and plugin &amp; theme customization — delivering tailored,
+          responsive, and SEO-friendly solutions.
         </motion.p>
 
         <motion.div
@@ -90,23 +98,24 @@ const HomeTab = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <motion.a
-            href="#contact"
+          <motion.button
+            onClick={() => onNavigate("contact")}
             className="btn btn-primary btn-glow"
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.97 }}
           >
             <span>Get in Touch</span>
             <FaArrowRight className="btn-icon-right" />
-          </motion.a>
+          </motion.button>
           <motion.a
-            href="#"
+            href="https://github.com/Mhz963"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-outline btn-shimmer"
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.97 }}
           >
-            <FaDownload />
-            <span>Download CV</span>
+            <span>View My GitHub</span>
           </motion.a>
         </motion.div>
 
@@ -135,7 +144,7 @@ const HomeTab = () => {
             <span className="stat-number">
               <AnimatedCounter target={100} duration={2000} suffix="+" />
             </span>
-            <span className="stat-label">Projects Completed</span>
+            <span className="stat-label">Projects Delivered</span>
           </motion.div>
           <motion.div
             className="stat-card stat-card-glow"
@@ -143,19 +152,19 @@ const HomeTab = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <span className="stat-number">
-              <AnimatedCounter target={50} duration={1800} suffix="+" />
-            </span>
-            <span className="stat-label">Happy Clients</span>
-          </motion.div>
-          <motion.div
-            className="stat-card stat-card-glow"
-            whileHover={{ y: -8, scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <span className="stat-number">
-              <AnimatedCounter target={99} duration={2200} suffix="%" />
+              <AnimatedCounter target={100} duration={2200} suffix="%" />
             </span>
             <span className="stat-label">Client Satisfaction</span>
+          </motion.div>
+          <motion.div
+            className="stat-card stat-card-glow"
+            whileHover={{ y: -8, scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <span className="stat-number">
+              <AnimatedCounter target={3} duration={1200} suffix="+" />
+            </span>
+            <span className="stat-label">Companies Worked</span>
           </motion.div>
         </motion.div>
 
@@ -166,7 +175,7 @@ const HomeTab = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.8 }}
         >
-          <p className="tech-marquee-label">Tech I work with</p>
+          <p className="tech-marquee-label">Technologies I Work With</p>
           <div className="tech-marquee">
             <div className="tech-marquee-track">
               {[...techStack, ...techStack].map((tech, i) => (
@@ -200,7 +209,7 @@ const HomeTab = () => {
             animate={{ y: [0, 15, 0], x: [0, 5, 0] }}
             transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <FaNodeJs />
+            <SiBootstrap />
           </motion.div>
           <motion.div
             className="floating-icon icon-wp"
@@ -221,14 +230,14 @@ const HomeTab = () => {
             animate={{ y: [0, -18, 0], x: [0, -8, 0] }}
             transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <SiTypescript />
+            <SiTailwindcss />
           </motion.div>
           <motion.div
             className="floating-icon icon-next"
             animate={{ y: [0, 10, 0], scale: [1, 0.9, 1] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <SiNextdotjs />
+            <SiElementor />
           </motion.div>
         </motion.div>
       </div>

@@ -20,13 +20,13 @@ function App() {
   const renderTab = () => {
     switch (activeTab) {
       case "home":
-        return <HomeTab key="home" />;
+        return <HomeTab key="home" onNavigate={handleTabChange} />;
       case "about":
         return <AboutTab key="about" />;
       case "contact":
         return <ContactTab key="contact" />;
       default:
-        return <HomeTab key="home" />;
+        return <HomeTab key="home" onNavigate={handleTabChange} />;
     }
   };
 
